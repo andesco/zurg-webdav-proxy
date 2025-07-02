@@ -1,0 +1,9 @@
+{
+  "compatibility_date": "2024-07-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "name": "zurg-rfc1123-proxy",
+  "main": "src/index.js",
+  "vars": {
+    "ZURG_BASE_URL": "https://your-zurg-instance.com"
+  }
+}
