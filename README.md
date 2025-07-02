@@ -28,8 +28,8 @@ Set up your application: Advanced settings › Build variables
  
 **required:** `ZURG_BASE_URL`
 
-- with credentials: `"https://username:password@zurg.yourhost.com"`
-- local network: `"http://192.168.1.100:9999"`
+- with credentials: `https://username:password@zurg.yourhost.com`
+- local network: `http://192.168.1.100:9999`
 
 **optional:** `WORKER_USERNAME` `WORKER_PASSWORD`
 
@@ -37,6 +37,6 @@ Set up your application: Advanced settings › Build variables
 
 ### 4. Update WebDAV Clients
 
-`https://your-worker-name.your-subdomain.workers.dev/dav/`
-`https://your-worker-name.your-subdomain.workers.dev/infuse/`
+- `https://your-worker-name.your-subdomain.workers.dev/dav/`
+- `https://your-worker-name.your-subdomain.workers.dev/infuse/`
 
