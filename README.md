@@ -18,20 +18,18 @@ Infuse has trouble determining the most recent media files because Zurg returns 
 
 ## Quick Setup
 
-### 1. Deploy
-
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/andesco/zurg-rfc1123-proxy)
 
-### 2. Update Variables
-
-Set up your application: Advanced settings › Build variables
+1. [Deploy to Cloudflare](https://deploy.workers.cloudflare.com/?url=https://github.com/andesco/zurg-rfc1123-proxy)
+2. select: Create and deploy, Continue to project…
+3. Settings › Variables and Secrets…
  
-**required:** `ZURG_BASE_URL`
+`ZURG_BASE_URL`
 
 - with credentials: `https://username:password@zurg.yourhost.com`
 - local network: `http://192.168.1.100:9999`
 
-**optional:** `WORKER_USERNAME` `WORKER_PASSWORD`
+`WORKER_USERNAME` & `WORKER_PASSWORD`
 
 - [basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
 
