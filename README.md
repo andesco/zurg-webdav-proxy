@@ -6,12 +6,12 @@ A Cloudflare Worker that acts as a proxy to Zurg’s WebDAV endpoints, automatic
 
 Infuse has trouble determining the most recent media files because Zurg returns timestamps in ISO 8601 format instead of the RFC1123 format required by WebDAV standards.
 
-**Before (Zurg):**
+**Zurg:** (zurg:2025.07.02.0032-nightly)
 ```xml
 <d:getlastmodified>2025-07-02T19:32:30.000+01:00</d:getlastmodified>
 ```
 
-**After (This Proxy):**
+**This Proxy:**
 ```xml
 <d:getlastmodified>Wed, 02 Jul 2025 17:32:30 GMT</d:getlastmodified>
 ```
@@ -24,16 +24,16 @@ Infuse has trouble determining the most recent media files because Zurg returns 
 
 ### 2. Update Variables
 
-**required:**
-`ZURG_BASE_URL`
+Set up your application: Advanced settings › Build variables
+ 
+**required:** `ZURG_BASE_URL`
 
 - with credentials: `"https://username:password@zurg.yourhost.com"`
 - local network: `"http://192.168.1.100:9999"`
 
-**optional basic authentication:**
-`WORKER_USERNAME`
-`WORKER_PASSWORD`
+**optional:** `WORKER_USERNAME` `WORKER_PASSWORD`
 
+- [basic authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)
 
 ### 4. Update WebDAV Clients
 
