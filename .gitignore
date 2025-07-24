@@ -1,30 +1,65 @@
-# Dependencies
-node_modules/
-.npm
-.pnpm-debug.log*
-
-# Wrangler
-.wrangler/
-dist/
-
-# Environment variables
-.env
-.env.local
-.env.production
-.env.staging
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
 # Logs
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report/
+
+# Runtime data
+*.cjs
+*.mjs
+*.es
+*.js
+*.jsx
+*.ts
+*.tsx
+*.d.ts
+*.map
+*.wasm
+*.json
+*.html
+*.css
+*.scss
+*.sass
+*.less
+*.styl
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+*.ico
+*.woff
+*.woff2
+*.eot
+*.ttf
+*.otf
+*.pdf
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.exe
+*.dll
+*.so
+*.dylib
+*.DS_Store
+Thumbs.db
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.next/
+.turbo/
+dist/
+build/
+out/
+.wrangler/
+wrangler.dev.toml

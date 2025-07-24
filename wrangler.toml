@@ -4,15 +4,3 @@ main = "index.js"
 compatibility_date = "2024-07-01"
 compatibility_flags = ["nodejs_compat"]
 
-[vars]
-# Set your Zurg URL with credentials and endpoints
-# Examples:
-# ZURG_BASE_URL = "https://username:password@your-zurg-domain.com"
-# ZURG_BASE_URL = "http://192.168.1.100:9999"
-# ZURG_BASE_URL = "https://your-tunnel.ngrok.io"
-ZURG_BASE_URL = "https://your-zurg-instance.com"
-
-# Optional: Add worker-level basic authentication
-# Uncomment and set these to add an extra security layer
-# WORKER_USERNAME = "your_username"
-# WORKER_PASSWORD = "your_password"
