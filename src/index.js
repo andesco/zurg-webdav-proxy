@@ -65,9 +65,11 @@ export default {
 
 			// Parse the incoming request URL
 			const url = new URL(request.url);
+			console.log(`Incoming request path: ${url.pathname}`);
 
 			// Handle /config route
 			if (url.pathname === '/config' || url.pathname === '/config/') {
+				console.log('Handling /config route.');
 				if (request.method === 'POST') {
 					const formData = await request.formData();
 					const fixTimestamps = formData.get('fixTimestamps') === 'on';
