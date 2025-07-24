@@ -27,6 +27,7 @@ export default {
 			let rewrittenUrl = urlString;
 			for (const rule of rewriteRules) {
 				if (rule.type === 'exact') {
+					const regex = new RegExp(rule.find.replace(/[.*+?^${}()|[\]\\]/g, '\\if (rule.type === 'exact') {
 					const regex = new RegExp(rule.find.replace(/[.*+?^${}()|[\]\\]/g, '\\async function getConfig(kv) {
 			const storedConfig = await kv.get('config', 'json');
 			return storedConfig || { fixTimestamps: false, rewriteRules: [] };
@@ -34,7 +35,7 @@ export default {
 
 		async function saveConfig(kv, newConfig) {
 			await kv.put('config', JSON.stringify(newConfig));
-		}'), 'gi');
+		}'), 'gi');'), 'gi');
 					rewrittenUrl = rewrittenUrl.replace(regex, rule.replace);
 				} else if (rule.type === 'regex') {
 					const regex = new RegExp(rule.find, 'g');
@@ -316,6 +317,8 @@ function rewriteWebDAVXml(xmlText, rewriteRules) {
     for (const rule of rewriteRules) {
         if (rule.type === 'exact') {
             // Case-insensitive exact match
+            const regex = new RegExp(rule.find.replace(/[.*+?^${}()|[\\]/g, '\if (rule.type === 'exact') {
+            // Case-insensitive exact match
             const regex = new RegExp(rule.find.replace(/[.*+?^${}()|[\]\\]/g, '\\/**
  * Fix WebDAV timestamps by converting ISO 8601 to RFC1123 format
  * @param {string} xmlText - The XML response from Zurg
@@ -341,7 +344,8 @@ function fixWebDAVTimestamps(xmlText) {
 			return match;
 		}
 	});
-}'), 'gi');
+}'), 'gi');'), 'gi');
+
             rewrittenXml = rewrittenXml.replace(regex, rule.replace);
         } else if (rule.type === 'regex') {
             // Regex match
