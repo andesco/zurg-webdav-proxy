@@ -1,6 +1,6 @@
 # 🔧 Zurg RFC1123 WebDAV Proxy
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/andesco/zurg-rfc1123-proxy)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/andesco/zurg-webdav-proxy)
 
 A Cloudflare Worker that acts as a proxy to Zurg’s WebDAV endpoints, automatically converting various ISO 8601 timestamps to RFC1123 format for proper WebDAV compliance.
 
@@ -18,9 +18,9 @@ Infuse has trouble determining the most recent media files because Zurg returns 
 
 ## Quick Setup
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/andesco/zurg-rfc1123-proxy)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/andesco/zurg-webdav-proxy)
 
-1. [Deploy to Cloudflare](https://deploy.workers.cloudflare.com/?url=https://github.com/andesco/zurg-rfc1123-proxy)
+1. [Deploy to Cloudflare](https://deploy.workers.cloudflare.com/?url=https://github.com/andesco/zurg-webdav-proxy)
 2. select: Create and deploy, Continue to project…
 3. Settings › Variables and Secrets…
  
