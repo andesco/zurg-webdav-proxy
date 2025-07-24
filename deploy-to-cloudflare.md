@@ -2,14 +2,14 @@
 
 ## One-Click Deploy
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/your-username/zurg-rfc1123-proxy)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/your-username/zurg-webdav-proxy)
 
 ## Manual Setup
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/zurg-rfc1123-proxy.git
-cd zurg-rfc1123-proxy
+git clone https://github.com/your-username/zurg-webdav-proxy.git
+cd zurg-webdav-proxy
 ```
 
 ### 2. Install Wrangler
@@ -44,7 +44,7 @@ WORKER_PASSWORD = "your_password"
 wrangler deploy
 ```
 
-Your worker will be available at: `https://zurg-rfc1123-proxy.your-subdomain.workers.dev`
+Your worker will be available at: `https://zurg-webdav-proxy.your-subdomain.workers.dev`
 
 ## Usage with Infuse
 

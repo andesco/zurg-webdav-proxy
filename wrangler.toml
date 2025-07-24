@@ -1,4 +1,4 @@
-name = "zurg-rfc1123-proxy"
+name = "zurg-webdav-proxy"
 main = "index.js"
 compatibility_date = "2024-07-01"
 compatibility_flags = ["nodejs_compat"]

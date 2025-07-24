@@ -1,5 +1,5 @@
 {
-	"name": "zurg-rfc1123-proxy",
+	"name": "zurg-webdav-proxy",
 	"version": "1.0.0",
 	"description": "Cloudflare Worker proxy to fix Zurg WebDAV timestamp format for Infuse compatibility",
 	"main": "index.js",

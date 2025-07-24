@@ -4,8 +4,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/zurg-rfc1123-proxy.git
-   cd zurg-rfc1123-proxy
+   git clone https://github.com/your-username/zurg-webdav-proxy.git
+   cd zurg-webdav-proxy
    ```
 
 2. **Install Wrangler CLI**
