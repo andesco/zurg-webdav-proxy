@@ -66,7 +66,7 @@ export default {
 			const url = new URL(request.url);
 
 			// Handle /config route
-			if (url.pathname === '/config') {
+			if (url.pathname === '/config' || url.pathname === '/config/') {
 				if (request.method === 'POST') {
 					const formData = await request.formData();
 					const fixTimestamps = formData.get('fixTimestamps') === 'on';
