@@ -8,6 +8,6 @@ compatibility_flags = ["nodejs_compat"]
 binding = "ZURG_PROXY_CONFIG"
 id = "7811d0a822da46cca6645c18db3e5d2c"
 
-[routes]
+[[routes]]
 pattern = "zurgproxy.andrewe.dev/*"
 zone_id = "dfd8082b699affc3249a9ec68917aeeb"
